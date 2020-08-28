@@ -1,14 +1,10 @@
-function change(element, changeValue, stopValue){
-  if (element === stopValue){
-    break
+function breakOut(array, changeValue, stopValue){
+for (let i = 0; i < array.length; i++) {
+  if (array[i] !== stopValue) {
+    array[i] = changeValue
   }
   else {
-    element = changeValue;
-    return(element)
+    break
+    }
   }
-}
-
-function breakOut(array, changeValue, stopValue){
-  array.forEach(change)
-  return (array)
 }
