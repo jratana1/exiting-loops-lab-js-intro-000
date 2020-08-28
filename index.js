@@ -10,4 +10,5 @@ function change(element, changeValue, stopValue){
 
 function breakOut(array, changeValue, stopValue){
   array.forEach(change)
+  return (array)
 }
