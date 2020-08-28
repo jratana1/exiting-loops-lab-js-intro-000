@@ -1,4 +1,4 @@
-/*function breakOut(array, changeValue, stopValue){
+function breakOut(array, changeValue, stopValue){
 for (let i = 0; i < array.length; i++) {
   if (array[i] !== stopValue) {
     array[i] = changeValue
@@ -8,13 +8,14 @@ for (let i = 0; i < array.length; i++) {
     }
   }
 }
-*/
-function breakOut(array, changeValue, stopValue){
-  array.forEach((element, changeValue, stopValue) => if (element !== stopValue) {
-    element = changeValue
+
+function keepGoing(array, changeValue, skipValue){
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == skipValue){
+      continue
+    }
+    else{
+      array[i] = changeValue
+    }
   }
-  else {
-    return (element)
-  }
-    )
 }
