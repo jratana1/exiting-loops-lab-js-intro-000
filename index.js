@@ -4,6 +4,7 @@ function change(element, changeValue, stopValue){
   }
   else {
     element = changeValue;
+    return(element)
   }
 }
 
